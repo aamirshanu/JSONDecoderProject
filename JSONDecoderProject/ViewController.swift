@@ -34,6 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let data = try Data(contentsOf: img!)
             cell.cellImage.image = UIImage(data: data)
             
+            //Make rounded button
             cell.cellImage.layer.borderWidth = 1.0
             cell.cellImage.layer.masksToBounds = false
             cell.cellImage.layer.borderColor = UIColor.white.cgColor
